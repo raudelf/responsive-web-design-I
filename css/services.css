@@ -100,7 +100,8 @@ a:hover {
 }
 
 .logo {
-  padding: 5px;
+    display: flex;
+    padding: 5px;
 }
 
 /* Box 1 */
@@ -198,15 +199,14 @@ footer {
 
     nav {
         flex-wrap: wrap;
-        margin-bottom: 5%;
+        margin: 5% 0;
     }
 
     .logo {
         order: -1;
-        padding: 5% 35%;
-    }
-
-    
+        margin: 0 auto 4% auto;
+        padding: 0 35%;
+    } 
 
     section {
         flex-direction: column;
@@ -246,8 +246,10 @@ footer {
     }
 
     .logo {
-        padding: 5% 0;
+        border: 1px;
+        justify-content: center;
     }
+
 
     .services-header-img {
         padding: 3% 0;
