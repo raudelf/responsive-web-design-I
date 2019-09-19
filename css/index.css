@@ -191,6 +191,10 @@ footer p{
         padding: 5% 35%;
     }
 
+    .banner {
+        border-bottom: 2px solid black;
+    }
+
     .code {
         display: none;
     }
@@ -206,6 +210,11 @@ footer p{
     #button {
         width: 30%;
         margin: 0 auto;
+        border: 1px solid black;
+    }
+
+    .box2 {
+        border-bottom: 2px solid black;
     }
 
   }
@@ -229,7 +238,6 @@ footer p{
 
     .box1 {
         flex-direction: column;
-        width: 100%;
     }
 
     .features,
@@ -243,5 +251,13 @@ footer p{
     .vision {
         width: 100%;
         margin: 7% 0;
+    }
+
+    .contact {
+        margin: 5% 0;
+    }
+
+    footer {
+        padding: 5% 0;
     }
   }
