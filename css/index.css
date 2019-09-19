@@ -90,7 +90,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: black;
 }
 
 .logo {
@@ -176,15 +176,19 @@ a:hover {
 }
 
 footer p{
-  width: 100opx;
   text-align: center;
 }
 
 /* Responsive CSS */
 
 @media only screen and (max-width: 800px) {
-    body {
-      background-color: red;
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        order: -1;
+        padding: 5% 35%;
     }
 
     .code {
@@ -193,7 +197,19 @@ footer p{
 
     .button {
         display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
+        padding: 5% 0;
     }
+
+    #button {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 500px) {
+
   }
