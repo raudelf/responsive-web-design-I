@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -67,12 +65,20 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-/* Navigation menu*/
-
 body {
   width: 1000px;
   margin: 0 auto;
 }
+
+h1{
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+/* Navigation menu*/
 
 .nav-bar {
   width: 100%;
@@ -94,136 +100,143 @@ a:hover {
 }
 
 .logo {
-  padding: 5px;
+    display: flex;
+    padding: 5px;
 }
 
-/* Banner*/
+/* Box 1 */
 
-.banner {
+.box1 {
+  margin-bottom: 3%;
+  padding-bottom: 3%;
   width: 100%;
-  padding: 5%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 3px solid black;
-}
-
-.button{
   display: flex;
   flex-direction: column;
+  align-content: space-evenly;
+  border-bottom: 1px solid black;
 }
 
-#button {
-  padding: 6px;
-  text-align: center;
-  border: 2px solid black;
+.services-header-img {
+  width: 100%;
+  margin-bottom: 3%;
 }
 
-.header {
-  font-size: 400%;
-  text-align: center;
-}
+/* Information Section*/
 
-/* Content */
-
-.content {
+section{
+  margin-bottom: 3%;
+  padding-bottom: 3%;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 5%;
-}
-
-.box1 {
-  display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid black;
 }
 
-.features,
-.about {
-  width: 45%;
-}
-
-
-.middle-img {
-  width: 100%;
-  margin: 5% 0;
-
-}
-
-.box2 {
-  padding-bottom: 5%;
-  width: 100%;
+.square {
+  width: 48%;
+  margin: 2% 0;
+  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border-bottom: 3px solid black;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  background: #f1f1f1;
+  border: 1px solid black;
 }
 
-.services,
-.product,
-.vision {
-  width: 32%;
-}
-
-.box3 {
-  margin: 5% 0;
-  width: 100%;
-}
-
-.contact p{
-  margin: 3% 0;
-}
-
-footer p{
+#bubbles {
+  margin: 4% 0;
+  width: 30%;
+  color: black;
+  background: white;
+  padding: 5px;
+  border: 1px solid black;
   text-align: center;
+  border-radius: 5px;
+}
+
+#bubbles:hover {
+  color: white;
+  background: skyblue;
+}
+
+/* Facts */
+
+.facts{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: square;
+  margin: 4%;
+}
+
+.services-info-img{
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+  margin: 5%;
 }
 
 /* Responsive CSS */
 
 @media only screen and (max-width: 800px) {
     body {
-      width: 80%;
+        width: 80%;
     }
-    
+
     nav {
         flex-wrap: wrap;
+        margin: 5% 0;
     }
 
     .logo {
         order: -1;
-        padding: 5% 35%;
+        margin: 0 auto 4% auto;
+        padding: 0 35%;
+    } 
+
+    section {
+        flex-direction: column;
     }
 
-    .banner {
-        border-bottom: 2px solid black;
+    .square {
+        width: 100%;
     }
 
-    .code {
+    #bubbles {
+        margin: 3% auto;
+        padding: 2%;
+        width: 100%;
+    }
+
+    .services-info-img {
         display: none;
     }
 
-    .button {
-        display: flex;
-        flex-direction: column;
+    .text {
         width: 100%;
-        justify-content: center;
-        padding: 5% 0;
+        margin: 2% 0;
     }
-
-    #button {
-        width: 30%;
-        margin: 0 auto;
-        border: 1px solid black;
-    }
-
-    .box2 {
-        border-bottom: 2px solid black;
-    }
-
   }
 
   @media only screen and (max-width: 500px) {
+    body {
+        width: 80%;
+    }
+
     nav a {
         width: 100%;
         padding: 4% 0;
@@ -233,35 +246,12 @@ footer p{
     }
 
     .logo {
-        padding: 5% 0;
+        border: 1px;
+        justify-content: center;
     }
 
-    .banner {
-        padding: 10% 0;
-    }
 
-    .box1 {
-        flex-direction: column;
-    }
-
-    .features,
-    .about {
-        width: 100%;
-        margin: 7% 0;
-    }
-
-    .services,
-    .product,
-    .vision {
-        width: 100%;
-        margin: 7% 0;
-    }
-
-    .contact {
-        margin: 5% 0;
-    }
-
-    footer {
-        padding: 5% 0;
+    .services-header-img {
+        padding: 3% 0;
     }
   }
