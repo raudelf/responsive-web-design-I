@@ -88,7 +88,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: black;
 }
 
 a {
@@ -97,11 +96,10 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: black;
 }
 
 .logo {
-  filter: invert(1);
   padding: 5px;
 }
 
@@ -135,12 +133,7 @@ section{
   border-bottom: 1px solid black;
 }
 
-.digital-design,
-.ux,
-.digital-market,
-.web,
-.ios,
-.android {
+.square {
   width: 48%;
   margin: 2% 0;
   padding: 20px;
@@ -195,3 +188,35 @@ footer {
   text-align: center;
   margin: 5%;
 }
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 800px) {
+    body {
+        width: 80%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    }
+
+    .logo {
+        order: -1;
+        padding: 5% 35%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .square {
+        width: 100%;
+    }
+
+    #bubbles {
+        margin: 3% auto;
+        padding: 2%;
+        width: 100%;
+    }
+  }
