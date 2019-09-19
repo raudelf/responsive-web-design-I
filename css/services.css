@@ -206,6 +206,8 @@ footer {
         padding: 5% 35%;
     }
 
+    
+
     section {
         flex-direction: column;
     }
@@ -218,5 +220,36 @@ footer {
         margin: 3% auto;
         padding: 2%;
         width: 100%;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+
+    .text {
+        width: 100%;
+        margin: 2% 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    body {
+        width: 80%;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 4% 0;
+        text-align: center;
+        font-size: 16pt;
+        border-bottom: 1px solid silver; 
+    }
+
+    .logo {
+        padding: 5% 0;
+    }
+
+    .services-header-img {
+        padding: 3% 0;
     }
   }
